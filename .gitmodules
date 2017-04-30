@@ -1,0 +1,3 @@
+[submodule "pebble-accelerometer-recorder"]
+	path = pebble-accelerometer-recorder
+	url = git@github.com:wijagels/pebble-accelerometer-recorder.git
