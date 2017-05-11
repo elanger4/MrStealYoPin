@@ -1,5 +1,6 @@
 package com.jim_cares.mrstealyoshit;
 
+import android.Manifest;
 import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.hardware.Sensor;
@@ -24,6 +25,11 @@ import java.lang.String;
 import com.jim_cares.mrstealyoshit.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
+    private static final int REQUEST_EXTERNAL_STORAGE = 1;
+    private static String[] PERMISSIONS_STORAGE = {
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE
+    };
 
     public class AccelData {
         final double x;
@@ -170,9 +176,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void onAccept() throws IOException {
 
         if(isExternalStorageWritable()) {
-            File root = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "MrStealYoShit");
+            File root = new File(String.valueOf(Environment.getExternalStorageDirectory()));
             root.mkdirs();
             File file = new File(root, "testData.txt");
+
+            if(!file.exists()) {
+                file.mkdirs();
+                file.createNewFile();
+            }
 
             try {
                 FileOutputStream f = new FileOutputStream(file);
