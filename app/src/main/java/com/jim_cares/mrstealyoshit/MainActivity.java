@@ -2,12 +2,14 @@ package com.jim_cares.mrstealyoshit;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.databinding.DataBindingUtil;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Environment;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -174,14 +176,16 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
     public void onAccept() throws IOException {
+        while(ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
+        }
 
         if(isExternalStorageWritable()) {
-            File root = new File(String.valueOf(Environment.getExternalStorageDirectory()));
+            File root = new File(String.valueOf(Environment.getExternalStorageDirectory()), "testData");
             root.mkdirs();
             File file = new File(root, "testData.txt");
 
             if(!file.exists()) {
-                file.mkdirs();
                 file.createNewFile();
             }
 
@@ -191,11 +195,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
                 for(int i = 0; i < vct.size(); i++) {
                     pw.print(vct.get(i).x);
-                    pw.append(" ");
+                    pw.append("    ");
                     pw.print(vct.get(i).y);
-                    pw.append(" ");
+                    pw.append("    ");
                     pw.print(vct.get(i).z);
-                    pw.append("/n");
+                    pw.print(System.getProperty("line.separator"));
                 }
                 pw.flush();
                 pw.close();
@@ -205,10 +209,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
-
         }
-
     }
 
     public boolean isExternalStorageWritable() {
@@ -218,5 +219,4 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
         return false;
     }
-
 }
