@@ -6,26 +6,22 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
+import android.util.Log;
 import android.view.View;
 import android.view.View.*;
-import android.widget.TextView;
-
-
-import com.jim_cares.mrstealyoshit.databinding.ActivityMainBinding;
-
-import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
+import java.io.PrintWriter;
 import java.util.Vector;
 import java.lang.String;
 
-import kotlin.io.FileAlreadyExistsException;
+import com.jim_cares.mrstealyoshit.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
@@ -120,7 +116,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 case R.id.buttonClear:
                     //remove prior key press from display
                     Editable tmp = binding.editText.getText();
-                    tmp.delete(tmp.length() - 1, tmp.length());
+
+                    if(tmp.length() > 0) {
+                        tmp.delete(tmp.length() - 1, tmp.length());
+                    }
                     binding.editText.setText((tmp));
 
                     //remove prior key press from output vector
@@ -169,20 +168,44 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
     public void onAccept() throws IOException {
-        try {
-            File statText = new File("output.txt");
-            FileOutputStream is = new FileOutputStream(statText);
-            OutputStreamWriter osw = new OutputStreamWriter(is);
-            Writer w = new BufferedWriter(osw);
 
-            for(int i = 0; i < vct.size(); i++){
-                w.write(Double.toString(vct.get(i).x) + " " + Double.toString(vct.get(i).y) + " " + Double.toString(vct.get(i).z));
-                w.close();
+        if(isExternalStorageWritable()) {
+            File root = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), "MrStealYoShit");
+            root.mkdirs();
+            File file = new File(root, "testData.txt");
+
+            try {
+                FileOutputStream f = new FileOutputStream(file);
+                PrintWriter pw = new PrintWriter(f);
+
+                for(int i = 0; i < vct.size(); i++) {
+                    pw.print(vct.get(i).x);
+                    pw.append(" ");
+                    pw.print(vct.get(i).y);
+                    pw.append(" ");
+                    pw.print(vct.get(i).z);
+                    pw.append("/n");
+                }
+                pw.flush();
+                pw.close();
+                f.close();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e) {
-            System.err.println("Problem writing to the file statsTest.txt");
+
+
         }
 
-
     }
+
+    public boolean isExternalStorageWritable() {
+        String state = Environment.getExternalStorageState();
+        if(Environment.MEDIA_MOUNTED.equals(state)) {
+            return true;
+        }
+        return false;
+    }
+
 }
