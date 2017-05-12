@@ -1,0 +1,7 @@
+#Thu May 11 13:54:49 EDT 2017
+base.0=/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c29238f6f7acea7e40997374f9f2b3cf062c0e26
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e7a8ff583dd02522b67f96dded5ee248f75dce4d/classes.dex
+base.1=/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e7a8ff583dd02522b67f96dded5ee248f75dce4d
+file.0=/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c29238f6f7acea7e40997374f9f2b3cf062c0e26/classes.dex

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_d89797209a7d79bca5f727b94691981c4947532d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2c7ff7d33e25da9b567c065175a9c0f4668f4c14">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e7a8ff583dd02522b67f96dded5ee248f75dce4d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="69fa2bfc7cfa53c59276b1679ae1c362edcc7d5a">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c29238f6f7acea7e40997374f9f2b3cf062c0e26/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_1fc633d9e4f71c8c8677a7e8ff40aa911c1f42be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.databinding-library-1.2.1_03c86800806fdd30dc7d929fb08cda7fe042b00e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.1_ccb413076d9856cf8c3346b453922858e7ce00e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/android-studio/gradle/m2repository/com/android/databinding/baseLibrary/2.2.3/baseLibrary-2.2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b4b51d1925cdfda98fd861230c1ecb5855500129">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/baseLibrary-2.2.3_8ef76442f2b3bb9104051fbc96d7473ade5178e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_44a142387d475e3bc78c0f3c8104f52d86efc43c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.1_a361d333fe6c3886e3e5b20a39b3768093690fec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_5dd8564d381882374a1dbeeb8315744cd82bcd28/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_0e7cb336b1bb66a6f0e5e2999cdd1ad99543baba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/exploded-aar/com.android.databinding/adapters/1.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.databinding-adapters-1.2.1_64564a1d7859cc26e0c8291c501147ba2467afac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_2518e6f872942309df448fa61684fff3e2052d8e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.1_f3b19ae56fc4d1bd5f9c77a252af715aaf1fa734/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/home/jim/AndroidStudioProjects/MrStealYoShit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_153f9f96346c3505c8253918a2b8cf5c330d736d/classes.dex" />
+    </item>
+
+</items>
