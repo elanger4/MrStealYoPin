@@ -1,0 +1,3 @@
+Erik Langert - numpy & sklearn
+Will Jagels  - Pebble
+Jim Bomysoad - Android
