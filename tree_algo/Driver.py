@@ -5,7 +5,7 @@ from pandas import DataFrame, read_csv
 from sklearn.ensemble import RandomForestClassifier
 
 # Read in data and properly set up pandas DataFrame
-df = read_csv('testData.txt', header=None, sep='\t')
+df = read_csv('../testData.txt', header=None, sep='\t')
 df.dtype = np.float32
 df.columns = ['x','y','z']
 
